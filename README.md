@@ -1,11 +1,8 @@
-# 复刻版微博
-> 基于react native 0.61+react-navigation 4.x
-> 一线摸鱼工程师
-> 欢迎交流~
-> 入坑RN，那就先摸个微博出来吧~
+## 复刻版微博
+- 基于 react native 0.61  react-navigation 4.x
+- 持续更新中...
 
-
-## run
+#### Run
 
 ``` bash
 # install dependencies
