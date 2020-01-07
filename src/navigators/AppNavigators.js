@@ -6,12 +6,15 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import HomeScreen from '../screens/HomeScreen';
+
+
 import MessageScreen from '../screens/MessageScreen';
 import SearchScreen from '../screens/SearchScreen';
 import UserScreen from '../screens/UserScreen';
 
 import AuthLoadingScreen from '../screens/AuthLoadingScreen';
 import SignInScreen from '../screens/SignInScreen';
+
 
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -49,18 +52,18 @@ class IconWithBadge extends React.Component {
 const HomeIconWithBadge = props => {
   return <IconWithBadge {...props} badgeCount={3} />;
 };
+
+
+
 const BottomTabNavigator = createBottomTabNavigator(
   {
     Home: {
       screen: HomeScreen,
       navigationOptions: {
-
         tabBarLabel: '首页',
         tabBarIcon: ({ tintColor, focused }) => (
           <Ionicons name={'ios-home'} size={25} style={{ color: tintColor }} />
         ),
-
-
       }
     },
     Search: {
@@ -94,26 +97,8 @@ const BottomTabNavigator = createBottomTabNavigator(
   },
 
   {
-    // defaultNavigationOptions: ({ navigation }) => ({
-    //   tabBarIcon: ({ focused, horizontal, tintColor }) => {
-    //     const { routeName } = navigation.state;
-    //     let IconComponent = Ionicons;
-    //     let iconName;
-    //     if (routeName === 'Home') {
-    //       iconName = `ios-home`;
-    //       IconComponent = HomeIconWithBadge;
-    //     } else if (routeName === 'Message') {
-    //       iconName = `ios-mail`;
-    //     } else if (routeName === 'Search') {
-    //       iconName = `ios-search`;
-    //     } else if (routeName === 'User') {
-    //       iconName = `ios-person`;
-    //     }
-    //     return <IconComponent name={iconName} size={25} color={tintColor} />;
-    //   },
-    // }),
     tabBarOptions: {
-      activeTintColor: 'black',
+      activeTintColor: '#FA9432',
       inactiveTintColor: 'gray',
     },
   }
@@ -149,5 +134,6 @@ export const AppStackNavigator = createStackNavigator({
 
 const AppContainer = createAppContainer(SwitchNavigator);
 
-export default AppContainer;
+export default  AppContainer
+
 
