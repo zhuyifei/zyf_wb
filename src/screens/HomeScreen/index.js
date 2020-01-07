@@ -8,7 +8,7 @@ import Tabs from './Tabs';
 import { Header } from 'react-native-elements';
 
 class HomePage extends React.Component {
-    static router = TopTabNavigator.router;
+  
 
     footerComponent = () => {
         return (
